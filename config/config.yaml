@@ -1,0 +1,54 @@
+# GI Craft Fair Analytics Configuration
+
+# Data paths
+data:
+  raw_data_path: "data/raw/gi_craft_data.csv"
+  processed_data_path: "data/processed/"
+  
+# Feature Engineering
+feature_engineering:
+  max_features: 200
+  feature_selection_threshold: 0.01
+  lag_periods: [1, 3, 6, 12, 24]
+  rolling_windows: [3, 6, 12]
+  
+# Survival Analysis
+survival_analysis:
+  duration_col: "years_active"
+  event_col: "churned"
+  confidence_level: 0.95
+  
+# Ensemble Models
+ensemble:
+  models:
+    - xgboost
+    - lightgbm
+    - catboost
+    - random_forest
+    - extra_trees
+    - neural_network
+    - linear_models
+  meta_learner: "ridge"
+  cv_folds: 5
+  
+# Segmentation
+segmentation:
+  n_clusters_range: [3, 4, 5, 6, 7, 8]
+  clustering_methods:
+    - kmeans
+    - gmm
+    - hierarchical
+  
+# Visualization
+visualization:
+  figure_size: [12, 8]
+  color_palette: "viridis"
+  save_plots: true
+  plot_format: "png"
+  dpi: 300
+
+# Model parameters
+model_params:
+  random_state: 42
+  test_size: 0.2
+  validation_size: 0.15

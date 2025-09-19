@@ -1,0 +1,123 @@
+{
+  "test_accuracy": 0.935,
+  "test_roc_auc": 0.9666885006777598,
+  "cv_results": {
+    "xgboost": {
+      "mean_accuracy": 0.9244,
+      "std_accuracy": 0.004363484845854289,
+      "scores": [
+        0.93,
+        0.923,
+        0.921,
+        0.929,
+        0.919
+      ]
+    },
+    "lightgbm": {
+      "mean_accuracy": 0.9222000000000001,
+      "std_accuracy": 0.003969886648255845,
+      "scores": [
+        0.924,
+        0.919,
+        0.921,
+        0.929,
+        0.918
+      ]
+    },
+    "catboost": {
+      "mean_accuracy": 0.9344000000000001,
+      "std_accuracy": 0.001200000000000001,
+      "scores": [
+        0.932,
+        0.935,
+        0.935,
+        0.935,
+        0.935
+      ]
+    },
+    "random_forest": {
+      "mean_accuracy": 0.9322000000000001,
+      "std_accuracy": 0.0019390719429665333,
+      "scores": [
+        0.933,
+        0.932,
+        0.929,
+        0.932,
+        0.935
+      ]
+    },
+    "extra_trees": {
+      "mean_accuracy": 0.9346000000000002,
+      "std_accuracy": 0.0008000000000000007,
+      "scores": [
+        0.935,
+        0.934,
+        0.934,
+        0.934,
+        0.936
+      ]
+    },
+    "neural_network": {
+      "mean_accuracy": 0.9304,
+      "std_accuracy": 0.003929376540877704,
+      "scores": [
+        0.933,
+        0.93,
+        0.934,
+        0.923,
+        0.932
+      ]
+    },
+    "logistic": {
+      "mean_accuracy": 0.9338000000000001,
+      "std_accuracy": 0.00040000000000000034,
+      "scores": [
+        0.934,
+        0.934,
+        0.934,
+        0.934,
+        0.933
+      ]
+    },
+    "ensemble": {
+      "mean_accuracy": 0.9352,
+      "std_accuracy": 0.00040000000000000034,
+      "scores": [
+        0.935,
+        0.935,
+        0.936,
+        0.935,
+        0.935
+      ]
+    }
+  },
+  "model_weights": {
+    "xgboost": 0.10998544579691845,
+    "lightgbm": 0.11826535124609737,
+    "catboost": 0.2890453335502158,
+    "random_forest": 0.10182083106902899,
+    "extra_trees": 0.11186052219692921,
+    "neural_network": 0.10441445454550492,
+    "logistic": 0.16460806159530533
+  },
+  "top_features": {
+    "Digital_Adoption_Index": 81.22290902991263,
+    "Year": 47.22595196623467,
+    "Years_Registered": 32.059728869075165,
+    "Vendor_Age": 12.419467103270023,
+    "Is_Registered_GI": 10.662092069906764,
+    "Ecommerce_Active": 8.81959959152325,
+    "Has_Govt_ID": 7.772753359544402,
+    "Income_Numeric": 5.275813017417838,
+    "COVID_Period": 3.872274516802634,
+    "Years_Since_Start": 2.3016137909252343,
+    "Monthly_Income_Bracket_Encoded": 2.2433077532998538,
+    "Is_Recent_Year": 0.289554538257317,
+    "Post_Digital_Era": 0.27315591690827706,
+    "Govt_Interaction_Score": 0.0,
+    "Govt_Interaction_Rating_Encoded": 0.0,
+    "Years_Active": 0.0,
+    "Wants_More_Events": 0.0,
+    "Fair_Beneficial": 0.0
+  }
+}
